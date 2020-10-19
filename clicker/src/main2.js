@@ -1,5 +1,6 @@
 let clickers = 15;
 let startTime = Date.now();
+document.getElementById("score").innerHTML = (clickers) + " Ricks Rickmaining!";
 
 function sync(dom, pos) {
   dom.style.left = `${pos.x}px`; //takes the value of pos.x and assigns it to a random x value, measured in pixels, within the game board
@@ -21,6 +22,7 @@ function addClicker() {
 }
 
 function removeClicker(e) { //the function to do the unthinkable and make him run around and desert you
+	document.getElementById("score").innerHTML = (clickers - 1) + " Ricks Rickmaining!";
 	e.target.parentNode.removeChild(e.target); //triggers the event to remove the target clicker when clicked on
 	clickers--; //reduces the clickers variable by 1
 	checkGameOver(); //checks if the clickers variable is 0; when it is, ends game
