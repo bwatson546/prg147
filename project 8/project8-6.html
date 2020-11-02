@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+	.center {
+		text-align: center;
+		padding-top: 50vh;
+	}
+</style>
+</head>
+<body>
+	<div class="center">
+		<input type="button" value="Click me" id="elem">
+		<p id="coords"></p>
+	</div>
+<script>
+  elem.onclick = function(event) {
+	
+    // show event type, element and coordinates of the click
+    alert(event.type + " at " + event.currentTarget);
+    document.getElementById("coords").innerHTML = "Coordinates: " + event.clientX + ":" + event.clientY;
+  };
+</script>
+</body>
+</html> 

@@ -1,0 +1,32 @@
+<html>
+<head>
+	<style>
+		#elem {
+			background-color: linen;
+			border-style: solid;
+			height: 100px;
+			width:50%;
+			text-align: center;
+			padding: 5px;
+			font-family: arial;
+		}
+	</style>
+</head>
+<body>
+	<div id="elem">
+		<p id="datehere">CLICK ME</p>
+	</div>
+	
+	<script>
+		var date;
+		var getdoc = document.getElementById("datehere");
+		elem.onclick = function() {
+			var date = Date();
+			alert('Thank you');
+			getdoc.innerHTML = date;
+		};
+	  
+	  
+	</script>
+</body>
+</html>
