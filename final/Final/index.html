@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Rick Clicker</title>
+  <link rel="stylesheet" href="res/main.css">
+</head>
+<body>
+	<audio id="theme">
+		<source src="res/theme.mp3" type="audio/mpeg">
+		Dunno how you got this to show up but nice work
+	</audio>
+	<h1 id="objective">De-Rick the board in 10 seconds!</h1>
+	<h3 id="score"></h3>
+	<div id="board">
+		<span id="remain"></span>
+	</div>
+	<br>
+	<div id="message"></div>
+	<br>
+	<button onclick="restart()" type="button">NORMAL</button>
+	<button onclick="hardMode()" type="button">HARD</button>
+	<button onclick="demonMode()" type="button">DEMON</button>
+	<button onclick="rickMode()" type="button">ULTI-RICK</button>
+	<p id="scold"></p>
+	<p>Wanna listen to some jams?</p>
+	<p id="note"></p>
+	<button onclick="playAudio()" type="button">Play</button>
+	<button onclick="pauseAudio()" type="button">Pause</button>
+	<div id="rules"></div>
+	<p>Rick Clicker 1990. Click Ricks Rocks!</p>
+	<script src="src/main2.js"></script>
+</body>
+</html>
